@@ -3,24 +3,26 @@
  ### 
 
 <h2>Description</h2>
-This repository is a walkthrough of how I built an Active Directory Home Lab Environment. The goal here is to simulate a corporate environment using two virtual machines inside VMware.
-<br />
+This repository is a walkthrough of how I built an Active Directory Home Lab Environment. The goal here is to develop my understanding of how Active Directory and Windows networking works. To do this, I'll be using Server 2019 as the domain controller which will house Active Directory and two network adapters, and Windows 10 as the client machine on the internal network. I'm going to run a PowerShell script to automatically create 1000+ users in Active Directory, install Windows 10 and join it to the domain, then log into it with one of our domain accounts. I'll be using Oracle Virtual Box for this home lab.
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Active Directory</b> 
+- <b>PowerShell</b>
+- <b>CMD</b>
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Oracle Virtual Box: https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html</b>
+- <b>Microsoft Server 2019: https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019</b>
+- <b>Windows 10 (22H2): https://www.microsoft.com/en-us/software-download/windows10
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+NETWORK OVERVIEW <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549193/in/album-72177720312399520/"/><img src="https://live.staticflickr.com/65535/53306549193_ca0c5f826b_o.jpg" width="930" height="557">
 <br />
 <br />
 Select the disk:  <br/>
