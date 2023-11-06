@@ -22,7 +22,7 @@ This repository is a walkthrough of how I built an Active Directory Home Lab Env
 
 <p align="center">
 NETWORK OVERVIEW <br/>
-<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549193/in/album-72177720312399520/"/><img src="https://live.staticflickr.com/65535/53306549193_ca0c5f826b_o.jpg" width="930" height="557">
+<img <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549193/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306549193_cd69d8610a_c.jpg" width="800" height="479"/>
 <br />
 <br />
 Select the disk:  <br/>
