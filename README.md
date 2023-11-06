@@ -25,12 +25,12 @@ NETWORK OVERVIEW <br/>
 <img <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549193/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306549193_cd69d8610a_c.jpg" width="800" height="479"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Download and install Virtual Box using the link above. The first virtual machine will house the domain controller so I'll need two network adapters, one to access the internet (NAT) and one dedicated to the internal network (Internal Network) so that the Domain Controller can communicate with the internal network. Go to Settings > Network > Advanced to make these changes.  <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783175/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783175_ceb4491599_c.jpg" width="800" height="490" alt="Settings - Network - Adapter 1 - NAT"/></a>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783160/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783160_3329f1c7a0_c.jpg" width="800" height="492" alt="Settings - Network - Adapter 2 - Internal Network"/>
 <br />
 <br />
 Confirm your selection:  <br/>
