@@ -28,17 +28,24 @@ NETWORK OVERVIEW <br/>
 Download and install Virtual Box using the link above. The first virtual machine will house the domain controller so I'll need two network adapters, one to access the internet (NAT) and one dedicated to the internal network (Internal Network) so that the Domain Controller can communicate with the internal network. Go to Settings > Network > Advanced to make these changes.  <br/>
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783175/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783175_ceb4491599_c.jpg" width="800" height="490" alt="Settings - Network - Adapter 1 - NAT"/></a>
 <br />
-<br />
+
 <br/>
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783160/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783160_3329f1c7a0_c.jpg" width="800" height="492" alt="Settings - Network - Adapter 2 - Internal Network"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+I'll give the domain controller a simple name (DC) and in the General > Advanced tab, I'll set the clipboard to "Bidrectional" which allows me to drag and drop things from my actual desktop into this virtual machine and visa versa.  <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306426/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306426_5832cfc43d_c.jpg" width="800" height="491" alt="DC Settings"/></a>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="<a data-flickr-embed="true" data-header="true" data-context="true" href="https://www.flickr.com/photos/199401609@N07/53306548923/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306548923_baa5decca5_c.jpg" width="800" height="491" alt="Settings - General - Advanced - Bidirectional"/></a>
+<br />
+<br />
+Click "Ok". Now double-click the domain controller (DC) and navigate to the directory where I downloaded Server 2019, select it and click "Mount and Retry Boot". This might take a while.  <br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53305439432/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53305439432_b8c9577613_c.jpg" width="800" height="492" alt="Server 2019 iso"/></a>
+<br />
+<br />
+Once Server 2019 is installed, I have to configure IP addressing for the internal (private) network. The external (internet) network automatically gets IP addressing from my home router. Click "Change adapter options".  <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668724/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668724_c873aa0184_c.jpg" width="799" height="633" alt="Change Adapter Options (Set IP address)"/></a>
 <br />
 <br />
 Sanitization complete:  <br/>
