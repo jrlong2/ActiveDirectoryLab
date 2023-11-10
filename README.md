@@ -48,8 +48,11 @@ Once Server 2019 is installed, I have to configure IP addressing for the interna
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668724/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668724_c873aa0184_c.jpg" width="799" height="633" alt="Change Adapter Options (Set IP address)"/></a>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now I have to figure out which one of these adapters connects to the internet and name both approriately because I will be using them later when I set up routing. I'll right-click the first one and go to Status > Details. I can see that the IP address is 10.0.2.15 which looks like a proper home IP address so I'll rename it as _INTERNET_ and the other as X_Internal_X. <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306476/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306476_66f5b05075_c.jpg" width="792" height="633" alt="Configuring Network Adapters 3"/></a>
+<br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783365/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783365_f9c9dd3222_c.jpg" width="799" height="636" alt="Configuring Network Adapters 4"/></a>
 <br />
 <br />
 Observe the wiped disk:  <br/>
