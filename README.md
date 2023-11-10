@@ -81,6 +81,16 @@ Add new forest and give it a simple name like mydomain.com, this forces a restar
 Now I can see MYDOMAIN\Administrator indicating that the domain was created successfully. I'll log in with my simple password "Password1" for the purpose of this lab ONLY!  <br/>
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306396/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306396_31386bc6f5_c.jpg" width="800" height="450" alt="MYDOMAIN-Administrator"/>
 <br />
+<br />
+Now I'll create my own domain admin account instead of using the one built in. Go to Start > Windows Administrative Tools > Active Directory Users and Computers. Then right-click on mydomain.com, select "New" in the drop down menu and select "Organizational Unit". This will house my admin account. <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306461/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306461_77cc23b48f_c.jpg" width="800" height="415" alt="Creating admin account 2"/></a> <br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668674/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668674_a050ca9639_c.jpg" width="800" height="415" alt="Creating admin account 3"/></a>
+<br />
+<br />
+Now I'll create my own domain admin account instead of using the one built in. Go to Start > Windows Administrative Tools > Active Directory Users and Computers. Then right-click on mydomain.com, select "New" in the drop down menu and select "Organizational Unit". This will house my admin account. <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306461/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306461_77cc23b48f_c.jpg" width="800" height="415" alt="Creating admin account 2"/></a>
+<br />
 </p>
 
 <!--
