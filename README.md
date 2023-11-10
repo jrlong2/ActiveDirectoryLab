@@ -59,8 +59,27 @@ Now I'll rename this PC. Right-click the Start Menu > System > Rename this PC. I
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783215/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783215_6901a6b2bb_c.jpg" width="793" height="629" alt="Rename your PC"/></a>
 <br />
 <br />
-I have to assign an IP address to the internal adapter. The diagram above shows the "NIC (Internal)" IP address 172.16.0.1 which is what I'll assign. I'm not going to use a default gateway because the DC itself is going to server as the default gateway. When I install Active Directory, it automatically installs DNS and this server is going to use itself as the DNS server so I'll give it a loopback address 127.0.0.1 which allows it to ping itself. <br/>
+I have to assign an IP address to the internal adapter. The diagram above shows the "NIC (Internal)" IP address 172.16.0.1 which is what I'll assign. I'm not going to use a default gateway because the DC itself is going to server as the default gateway. When I install Active Directory, it automatically installs DNS and this server is going to use itself as the DNS server so I'll give it a loopback address 127.0.0.1 which allows it to ping itself. This forces a restart. <br/>
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668554/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668554_50c54ccc10_c.jpg" width="800" height="635" alt="Set IP &amp; DNS server address"/></a>
+<br />
+<br />
+After the reboot, I'll install Active Directory and create a domain. On the Server Manager Dashboard click Add roles and features > Next > Next > Next and then I'm going to select Active Directory Domain Services > Add Features. This might take a while.  <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668719/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668719_342e251554_c.jpg" width="782" height="553" alt="Choose Active Directory Domain Services"/></a> <br />
+
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549198/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306549198_7d2da2d5e0_c.jpg" width="800" height="390" alt="AD DS Installed"/></a>
+<br />
+<br />
+At this point I've installed the software for Active Directory Domain Services but I haven't created the domain yet. So for the post deployment configuration I'll click the flag in the upper-right corner and select "Promote this server to a domain controller".   <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53305439497/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53305439497_598f63c70f_c.jpg" width="800" height="414" alt="Promote server to the DC"/>
+<br />
+<br />
+Add new forest and give it a simple name like mydomain.com, this forces a restart.  <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549188/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306549188_66f58d90b8_c.jpg" width="753" height="561" alt="Add a new forest"/></a>
+<br />
+<br />
+Now I can see MYDOMAIN\Administrator indicating that the domain was created successfully. I'll log in with my simple password "Password1" for the purpose of this lab ONLY!  <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306396/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306396_31386bc6f5_c.jpg" width="800" height="450" alt="MYDOMAIN-Administrator"/>
 <br />
 </p>
 
