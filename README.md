@@ -103,12 +103,20 @@ Now I'm going to install the remote access server and network address translatio
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668689/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668689_438a38297b_c.jpg" width="780" height="558" alt="Configure RAS-NAT"/></a>
 <br />
 <br />
-Next > select Routing. Then keep clicking "Next" the click "Install". This will take some time.<br />
+Next > select Routing. Then keep clicking "Next" then click "Install". This will take some time.<br />
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306501/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306501_042d128a8c_c.jpg" width="783" height="553" alt="Configure RAS-NAT (Install Routing)"/></a><br />
 <br />
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549148/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306549148_c31d556bdc_c.jpg" width="784" height="558" alt="Configure RAS-NAT (Install)"/></a>
 <br />
 <br />
+Now in the upper-right corner I'll select "Tools" and go down to "Routing and Remote Access". Right-click on "DC (local)" and select "Configure and Enable Routing and Remote Access".
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306301/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306301_caa22a9642_c.jpg" width="800" height="450" alt="Setting up Remote Access 1"/></a><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306548963/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306548963_72e92e7842_c.jpg" width="800" height="450" alt="Setting up Remote Access 2"/></a>
+<br />
+<br />
+Then I need to install NAT to allow my internal client to access the internet using one IP address.
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668534/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668534_74df8a3bc5_c.jpg" width="800" height="450" alt="Setting up Remote Access 3"/></a>
 </p>
 
 <!--
