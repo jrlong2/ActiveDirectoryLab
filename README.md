@@ -85,11 +85,29 @@ Now I can see MYDOMAIN\Administrator indicating that the domain was created succ
 Now I'll create my own domain admin account instead of using the one built in. Go to Start > Windows Administrative Tools > Active Directory Users and Computers. Then right-click on mydomain.com, select "New" in the drop down menu and select "Organizational Unit". This will house my admin account. <br/>
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306461/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306461_77cc23b48f_c.jpg" width="800" height="415" alt="Creating admin account 2"/></a> <br />
 <br />
+<br /> I'll name my admin account "_ADMINS". Then I'll right-click "_ADMINS" and go to New > User. In the window that opens, I'll fill in my name. NOTE: In the space "User logon name", I want to use a- to signify that this is an admin account, my first name initial and my last name (a-jlong) because this is the common naming convention in a lot of organizations.
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668674/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668674_a050ca9639_c.jpg" width="800" height="415" alt="Creating admin account 3"/></a>
 <br />
 <br />
-Now I'll create my own domain admin account instead of using the one built in. Go to Start > Windows Administrative Tools > Active Directory Users and Computers. Then right-click on mydomain.com, select "New" in the drop down menu and select "Organizational Unit". This will house my admin account. <br/>
-<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306461/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306461_77cc23b48f_c.jpg" width="800" height="415" alt="Creating admin account 2"/></a>
+I have an account now but it's still not an admin, so to make it a domain admin I need to right-click my name and in the drop down go to Properties > Member Of > Add. In the window that opens, type "domain admins" in the lower box, then click "Check Names". <br/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549078/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306549078_af68d23b10_c.jpg" width="752" height="525" alt="Make new user an admin 1"/></a> <br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783290/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783290_f8ed1d6eb8_z.jpg" width="578" height="534" alt="Make new user an admin 2"/>
+<br />
+<br />
+Click Ok. Now my account is a domain admin account. To use this, I'm going to sign out and sign back in with my domain admin account (a-jlong). <br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668654/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668654_0efa39b1a0_c.jpg" width="800" height="450" alt="Log in to Other user (a-jrlong2)"/></a>
+<br />
+<br />
+Now I'm going to install the remote access server and network address translation. The purpose of RAS/NAT is to allow the client (when I install it) to be on the internal network but still have access to the internet through the domain controller. To do this, go to Add roles and features > Next > Next > select Remote Access.<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668689/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668689_438a38297b_c.jpg" width="780" height="558" alt="Configure RAS-NAT"/></a>
+<br />
+<br />
+Next > select Routing. Then keep clicking "Next" the click "Install". This will take some time.<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306501/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306501_042d128a8c_c.jpg" width="783" height="553" alt="Configure RAS-NAT (Install Routing)"/></a><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549148/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306549148_c31d556bdc_c.jpg" width="784" height="558" alt="Configure RAS-NAT (Install)"/></a>
+<br />
 <br />
 </p>
 
