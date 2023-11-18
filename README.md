@@ -140,7 +140,7 @@ Looking at the "Lease duration for DHCP clients" section in the image below, thi
 Now I can see my IPv4 is green and my scope has been created. There are no leases in it because I haven't created the client computer yet.
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53333044666/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53333044666_0dec6a07e1_c.jpg" width="796" height="482" alt="New Scope 4"/></a><br />
 <br />
-Before I create my client computer, I'm going to use a PowerShell script to create over 1000 users in Active Directory so I don't have to manually create them.
+Before I create my client computer, I'm going to use a PowerShell script to create over 1000 user accounts in Active Directory so I don't have to manually create them.
 <br />
 <br />
 </p>
