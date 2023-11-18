@@ -133,7 +133,14 @@ Looking at the diagram, I defined a DHCP scope that will give IP addresses in th
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53333044651/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53333044651_f82e333b67_c.jpg" width="800" height="467" alt="New Scope 3"/></a><br />
 <br />
 Looking at the "Lease duration for DHCP clients" section in the image below, this defines how long a computer can have an IP address before it needs to be refreshed. For example, if you're in a cafe and you have a lease duration of 8 days, nobody will be able to use that IP address until the lease expires. But for the purpose of a home lab, this is fine.
-<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53305439647/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53305439647_bb1ca883a6_c.jpg" width="778" height="548" alt="Configure DHCP Scope 2"/>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53305439647/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53305439647_bb1ca883a6_c.jpg" width="778" height="548" alt="Configure DHCP Scope 2"/><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306549158/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306549158_7039737778_c.jpg" width="786" height="550" alt="Configure DHCP Scope"/></a><br />
+<br />
+Now I can see my IPv4 is green and my scope has been created. There are no leases in it because I haven't created the client computer yet.
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53333044666/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53333044666_0dec6a07e1_c.jpg" width="796" height="482" alt="New Scope 4"/></a><br />
+<br />
+Before I create my client computer, I'm going to use a PowerShell script to create over 1000 users in Active Directory so I don't have to manually create them.
 <br />
 <br />
 </p>
