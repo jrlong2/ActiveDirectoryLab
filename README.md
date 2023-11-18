@@ -116,7 +116,26 @@ Now in the upper-right corner I'll select "Tools" and go down to "Routing and Re
 <br />
 <br />
 Then I need to install NAT to allow my internal client to access the internet using one IP address.
-<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668534/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668534_74df8a3bc5_c.jpg" width="800" height="450" alt="Setting up Remote Access 3"/></a>
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668534/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668534_74df8a3bc5_c.jpg" width="800" height="450" alt="Setting up Remote Access 3"/></a><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53332107947/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53332107947_c52e290f05_c.jpg" width="800" height="426" alt="Routing and Remote Access"/></a><br />
+Now that RAS/NAT is configured, I'm going to set up DHCP on the domain controller with scope information so that my Windows 10 client can get an IP address that will let it get on the internet. Click on Add roles and features > Next > Next then select "DHCP Server". Keep clicking "Next", then Install.<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783315/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783315_1db87540c6_c.jpg" width="779" height="560" alt="Installing DHCP Server"/></a><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306391/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306391_441d2e4661_c.jpg" width="780" height="559" alt="Installing DHCP Server 2"/>
+<br />
+<br />
+Looking at the diagram, I defined a DHCP scope that will give IP addresses in this range (172.16.0.100-200). Right-click "IPv4" and select "New Scope".<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53333385999/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53333385999_55a0e63b1f_c.jpg" width="800" height="450" alt="New Scope"/></a><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53333386004/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53333386004_756a57401c_c.jpg" width="800" height="466" alt="New Scope 2"/></a><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53333044651/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53333044651_f82e333b67_c.jpg" width="800" height="467" alt="New Scope 3"/></a><br />
+<br />
+Looking at the "Lease duration for DHCP clients" section in the image below, this defines how long a computer can have an IP address before it needs to be refreshed. For example, if you're in a cafe and you have a lease duration of 8 days, nobody will be able to use that IP address until the lease expires. But for the purpose of a home lab, this is fine.
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53305439647/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53305439647_bb1ca883a6_c.jpg" width="778" height="548" alt="Configure DHCP Scope 2"/>
+<br />
+<br />
 </p>
 
 <!--
