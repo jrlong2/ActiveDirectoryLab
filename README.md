@@ -140,7 +140,18 @@ Looking at the "Lease duration for DHCP clients" section in the image below, thi
 Now I can see my IPv4 is green and my scope has been created. There are no leases in it because I haven't created the client computer yet.
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53333044666/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53333044666_0dec6a07e1_c.jpg" width="796" height="482" alt="New Scope 4"/></a><br />
 <br />
-Before I create my client computer, I'm going to use a PowerShell script to create over 1000 user accounts in Active Directory so I don't have to manually create them.
+Before I create my client computer, I'm going to use a PowerShell script to create over 1000 user accounts in Active Directory so I don't have to manually create them. To do this, I need to make a configuration that allows me to get on the internet from the domain controller so I will have to disable the security functions of the domain controller. Normally I wouldn't do this in a real production environment, but for my home lab it's fine.<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53305439577/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53305439577_ff9c811c81_c.jpg" width="800" height="416" alt="Disable IE Enhanced Security Configuration"/></a><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53333271898/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53333271898_efb2104462_c.jpg" width="800" height="440" alt="Disable IE Enhanced Security Configuration 2"/></a>
+<br />
+<br />
+Now I will paste this link https://github.com/joshmadakor1/AD_PS into the browser,download the script and extract it to the desktop. Before I run the script, I have to enable the execution of all scripts.
+<img src="
+<br /><a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306306361/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306306361_d3555eacfd_c.jpg" width="800" height="378" alt="Navigate to script directory"/></a><br />
+<br />
+Running the script to create 1000 user accounts.
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668564/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668564_70df80c1d7_c.jpg" width="800" height="373" alt="Script creating users"/></a>
 <br />
 <br />
 </p>
