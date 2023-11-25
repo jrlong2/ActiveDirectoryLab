@@ -154,6 +154,16 @@ Running the script to create 1000 user accounts.
 <img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306668564/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306668564_70df80c1d7_c.jpg" width="800" height="373" alt="Script creating users"/></a>
 <br />
 <br />
+Now I will create another virtual machine to act as a user in the domain. I'll give it the name "CLIENT1", configure it so that it will only be able to get on the internet by being assigned an IP address from the domain controller and join it to the domain.
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53305439472/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53305439472_4faaececaf_c.jpg" width="799" height="630" alt="Rename this PC (join domain)"/></a><br />
+<br />
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53306783225/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53306783225_f9605729e3_c.jpg" width="797" height="634" alt="Rename this PC (join domain successful)"/>
+<br />
+<br />
+And now I'll check to make sure "CLIENT1" is getting an IP address from the domain controller and I'll ping the domain as well.
+<img src="<a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/199401609@N07/53305439657/in/album-72177720312399520/" title=><img src="https://live.staticflickr.com/65535/53305439657_2612b4caf8_c.jpg" width="800" height="579" alt="Client VM IP address properly assigned"/></a>
+<br />
+<br />
 </p>
 
 <!--
